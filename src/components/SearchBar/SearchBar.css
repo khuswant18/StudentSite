@@ -1,0 +1,81 @@
+.input-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%); 
+    color: #888;
+    pointer-events: none;
+}
+
+.college-search {
+    width: 100%; 
+    padding: 10px 12px 10px 40px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease; 
+    } 
+
+.college-search:focus {
+    border-color: #007bff;
+    }
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  select {
+    padding: 6px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.3s;
+  }
+
+  select:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #fff;
+  }
+
+  option {
+    padding: 10px;
+  }
+
+  .add-student-btn {
+    background-color: #3995d2;
+    color: #fff;
+    border: 1px solid #91d5ff;
+    padding: 9px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .add-student-btn:hover {
+    background-color: #0091ff;
+  }
+
+  .student-form {
+    display: flex;
+    padding: 2rem;
+  }

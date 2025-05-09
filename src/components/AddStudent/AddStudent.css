@@ -1,0 +1,95 @@
+.student-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.student-form {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  align-items: flex-end;
+  animation:fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.student-form label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.name, .email, .course {
+  display: flex;
+  flex: 1 1 100%;
+  min-width: 100%;
+}
+
+.student-form input,
+.student-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.student-form button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1 1 100%;
+  min-width: 100%;
+}
+
+.student-form button:hover {
+  background-color: #2980b9;
+}
+
+@media (min-width: 600px) {
+  .name, .email, .course {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 200px;
+  }
+
+  .student-form button {
+    flex: 0 0 auto;
+    min-width: auto;
+    height: 42px;
+    align-self: flex-start;
+  }
+}
+
+
+.student-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 20px 16px;
+  box-sizing: border-box;
+}

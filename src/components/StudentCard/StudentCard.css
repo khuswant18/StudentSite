@@ -1,0 +1,131 @@
+.student-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.student-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+
+.card {
+  width: 32%;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 175px;
+  animation:fadeIn 1.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.card-header { 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.badge {
+  border-radius: 20px;
+  font-weight: 500;
+  
+}
+
+.unknown {
+  color: #7e22ce;
+  margin-bottom: 1rem;
+}
+
+.email-label, .course-label {
+  font-weight: 600;
+}
+
+.details-button {
+  padding: 0.6rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.details-button:hover {
+  background-color: #4da1fa;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1221px) {
+  .card {
+      width: 48%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+      width: 100%;
+  }
+  
+  .student-card {
+      justify-content: center;
+  }
+} 
+
+@media (max-width: 600px) {
+  .student-container { 
+      padding-top: 2rem;   
+  }
+
+  .card {
+    gap: 1.3rem;
+    width: 100%;
+  }
+
+  .details-button {
+      padding: 0.5rem;
+      font-size: 14px;
+  }
+
+  .card {
+      height: auto; 
+  }
+}
+
+@media (max-width:466px) {
+  .email , .password{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+
+
+}
