@@ -17,7 +17,7 @@ export const mockStudentData = [
     return new Promise((resolve)=>{
         setTimeout(()=>{ 
             resolve(mockStudentData)
-        },2000)
+        },3000)
     })
   } 
   
